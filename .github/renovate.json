@@ -9,6 +9,7 @@
     {
       "matchPackageNames": ["upcloud-cli"],
       "extractVersion": "^v(?<version>.*)$",
+      "automerge": true,
       "addLabels": [
         "renovate_publish"
       ]
