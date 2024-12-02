@@ -2,16 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>rwunderer/renovate",
+    "github>rwunderer/renovate:container-tools",
     "github>rwunderer/renovate:cosign-version",
     "customManagers:dockerfileVersions"
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
+      "matchDepNames": [
         "upcloud-cli"
       ],
       "extractVersion": "^v(?<version>.*)$",
       "automerge": true,
+      "automergeType": "pr",
       "addLabels": [
         "renovate_publish"
       ]
