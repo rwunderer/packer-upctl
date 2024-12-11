@@ -9,7 +9,8 @@
   "packageRules": [
     {
       "matchDepNames": [
-        "upcloud-cli"
+        "upcloud-cli",
+        "hashicorp-packer"
       ],
       "extractVersion": "^v(?<version>.*)$",
       "automerge": true,
