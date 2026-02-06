@@ -4,7 +4,7 @@
 FROM alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 AS builder
 
 # renovate: datasource=github-releases depName=upcloud-cli lookupName=UpCloudLtd/upcloud-cli
-ARG UPCTL_VERSION=3.28.0
+ARG UPCTL_VERSION=3.29.0
 # renovate: datasource=docker depName=hashicorp/packer lookupName=hashicorp/packer
 ARG PACKER_VERSION=1.14.3
 ARG TARGETARCH
