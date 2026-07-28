@@ -24,7 +24,7 @@ jobs:
       # with sigstore/fulcio when running outside of PRs.
       id-token: write
 
-    uses: rwunderer/renovate/.github/workflows/reusable-docker-publish.yml@c57245ca350c735198869e3d60afda9168f2f81d # main
+    uses: rwunderer/renovate/.github/workflows/reusable-docker-publish.yml@75c5344a34c439a44dd912d54d58101f7741229d # main
     with:
       target: packer
       docker-description: Packer image with UpCloud cli utility
