@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
 
-    uses: rwunderer/renovate/.github/workflows/reusable-auto-tag.yml@75c5344a34c439a44dd912d54d58101f7741229d # main
+    uses: rwunderer/renovate/.github/workflows/reusable-auto-tag.yml@5a36bd45a5d1e38453cf1dff990ec214a0453d26 # main
     with:
       regex-pattern: "PACKER_VERSION=(\\d+\\.\\d+\\.\\d+)"
       tag-prefix: "v"
