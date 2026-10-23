@@ -6,7 +6,7 @@ FROM alpine:3.24.2@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4c
 # renovate: datasource=github-releases depName=upcloud-cli lookupName=UpCloudLtd/upcloud-cli
 ARG UPCTL_VERSION=3.37.0
 # renovate: datasource=docker depName=hashicorp/packer lookupName=hashicorp/packer
-ARG PACKER_VERSION=1.16.1
+ARG PACKER_VERSION=1.16.2
 ARG TARGETARCH
 ARG TARGETOS
 ARG TARGETVARIANT
@@ -27,6 +27,6 @@ RUN ARCH=${TARGETARCH} && \
 #-------------------
 # Packer image
 #-------------------
-FROM hashicorp/packer:1.16.1@sha256:9fd66d5a4ea0598036e6b50ac6f8c0e72c27746648a5abe480463119e9486ea7 AS packer
+FROM hashicorp/packer:1.16.2@sha256:5aa2160b623fad0b99f8ae8d9cc162ba9775ae428367edca88addc01bb86dd52 AS packer
 
 COPY --from=builder /bin/upctl /bin/upctl
